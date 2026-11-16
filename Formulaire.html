@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENI - Memory - Formulaire</title>
+</head>
+<header>
+<h1>ENI - Memory - S'inscrire</h1>
+    <nav>
+        <div class="menu">
+          <ul>
+            <li class="menuf"><a href="index.html" >Accueil</a></li>
+            <li class="menuf"><a href="Formulaire.html" >S'inscrire</a></li>
+            <li class="menuf"><a href="Connexion.html" >Se connecter</a></li>
+            <li class="menuf"><a href="Profil.html" >Profil</a></li>
+            <li class="menuf"><a href="Jouer.html" >Jouer</a></li>
+          </ul>
+        </div>
+    </nav>
+</header>
+
+<fieldset>
+      <legend>Texte :</legend>
+      <form action="" method="post">
+        <label for="nom">Nom d'utilisateur :</label>
+        <input
+          type="text"
+          id="nom"
+          name="nom"
+          autofocus
+          placeholder="3 caractères minimum"
+          pattern="[A-Za-Z]{3,}"
+          title="Saisissez votre nom (3 caractères min.)"
+        />
+        <br />
+        <br />
+        <label for="email">Entrez votre email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="votre email"
+          title="Saisissez votre adresse email"
+        />
+        <br />
+    
+        <br /><br />
+        <label for="motdePasse">Mot de passe :</label>
+        <input
+          type="password"
+          id="motdePasse"
+          name="motdePasse"
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+          title="Saisissez votre mot de passe de minimum 6 caractères comportant
+          des lettres minuscules et majuscules et des chiffres"
+        />
+        
+        <br />
+        <input type="reset" />
+        <input type="submit" />
+      </form>
+    </fieldset>
+
+<body>
+    
+</body>
+</html>
