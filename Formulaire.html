@@ -20,72 +20,75 @@
         </div>
     </nav>
 </header>
-
-<fieldset>
-      
-      <p>
-        <h2><strong>Inscrivez-vous.</strong> </h2>
-    </p>
-      <form action="" method="post">
-        <label for="nom">Nom d'utilisateur :</label>
-        <br />
-        <input
-          type="text"
-          id="nom"
-          name="nom"
-          autofocus
-          placeholder="3 caractères minimum"
-          pattern="[A-Za-Z]{3,}"
-          title="Saisissez votre nom (3 caractères min.)"
-        />
-        <hr />
-        <br />
-        <br />
-        <label for="email">Entrez votre email</label>
-        <br />
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Votre email"
-          title="Saisissez votre adresse email"
-        />
-        <hr />
-        <br /><br />
-        <label for="motdePasse">Mot de passe :</label>
-        <br />
-        <input
-          type="password"
-          id="motdePasse"
-          name="motdePasse"
-          placeholder="Votre mot de passe"
-          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
-          title="Saisissez votre mot de passe de minimum 6 caractères comportant
-          des lettres minuscules et majuscules et des chiffres"
-        />
-        <hr />
-        <br /><br />
-        <label for="motdePasse">Confirmer le mot de passe :</label>
-        <br />
-        <input
-          type="password"
-          id="confirmMotdePasse"
-          name="confirmMotdePasse"
-          placeholder="Confirmez votre mot de passe"
-          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
-          title="Saisissez votre mot de passe de minimum 6 caractères comportant
-          des lettres minuscules et majuscules et des chiffres"
-        />
-        <hr />
-        <br />
-        <br />
-        <input type="submit" value="Création du compte"/>
-        <input type="reset" value="Annuler" />
-        
-      </form>
-    </fieldset>
-
 <body>
+  <main>
+    <div class="formulairemain">
+      <fieldset>
+          
+          <div class ="inscivezvous">
+            <h2><strong>Inscrivez-vous.</strong> </h2>
+          </div>
+          <form action="" method="post">
+            <label for="nom">Nom d'utilisateur :</label>
+            <br />
+            <input
+              type="text"
+              id="nom"
+              name="nom"
+              autofocus
+              placeholder="3 caractères minimum"
+              pattern="[A-Za-Z]{3,}"
+              title="Saisissez votre nom (3 caractères min.)"
+            />
+            <hr />
+            <br />
+            <br />
+            <label for="email">Entrez votre email</label>
+            <br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Votre email"
+              title="Saisissez votre adresse email"
+            />
+            <hr />
+            <br /><br />
+            <label for="motdePasse">Mot de passe :</label>
+            <br />
+            <input
+              type="password"
+              id="motdePasse"
+              name="motdePasse"
+              placeholder="Votre mot de passe"
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+              title="Saisissez votre mot de passe de minimum 6 caractères comportant
+              des lettres minuscules et majuscules et des chiffres"
+            />
+            <hr />
+            <br /><br />
+            <label for="motdePasse">Confirmer le mot de passe :</label>
+            <br />
+            <input
+              type="password"
+              id="confirmMotdePasse"
+              name="confirmMotdePasse"
+              placeholder="Confirmez votre mot de passe"
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+              title="Saisissez votre mot de passe de minimum 6 caractères comportant
+              des lettres minuscules et majuscules et des chiffres"
+            />
+            <hr />
+            <br />
+            <br />
+            <input type="submit" value="Création du compte"/>
+            <input type="reset" value="Annuler" />
+            
+          </form>
+        </fieldset>
+    <div>
+  </main>
+
     
 </body>
 </html>

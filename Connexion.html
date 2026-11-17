@@ -21,43 +21,47 @@
     </nav>
 </header>
 <body>
-    <fieldset>
-      
-      <p>
-        <h2><strong>Connectez-vous.</strong> </h2>
-    </p>
-      <form action="" method="post">
+  <main>
+    <div class = "connexionmain">
+      <fieldset>
         
-        <label for="email">Entrez votre email</label>
-        <br />
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Votre email"
-          title="Saisissez votre adresse email"
-        />
-        <hr />
-        <br /><br />
-        <label for="motdePasse">Mot de passe :</label>
-        <br />
-        <input
-          type="password"
-          id="motdePasse"
-          name="motdePasse"
-          placeholder="Votre mot de passe"
-          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
-          title="Saisissez votre mot de passe de minimum 6 caractères comportant
-          des lettres minuscules et majuscules et des chiffres"
-        />
-        
-        <hr />
-        <br />
-        <br />
-        <input type="submit" value="Se connecter"/>
-        <input type="reset" value="Annuler" />
-        
-      </form>
-    </fieldset>
+        <p>
+          <h2><strong>Connectez-vous.</strong> </h2>
+      </p>
+        <form action="" method="post">
+          
+          <label for="email">Entrez votre email</label>
+          <br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Votre email"
+            title="Saisissez votre adresse email"
+          />
+          <hr />
+          <br /><br />
+          <label for="motdePasse">Mot de passe :</label>
+          <br />
+          <input
+            type="password"
+            id="motdePasse"
+            name="motdePasse"
+            placeholder="Votre mot de passe"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+            title="Saisissez votre mot de passe de minimum 6 caractères comportant
+            des lettres minuscules et majuscules et des chiffres"
+          />
+          
+          <hr />
+          <br />
+          <br />
+          <input type="submit" value="Se connecter"/>
+          <input type="reset" value="Annuler" />
+          
+        </form>
+      </fieldset>
+    </div>
+  </main>
 </body>
 </html>

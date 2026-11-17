@@ -8,25 +8,28 @@
 </head>
 <body>
 <header>
-<h1>ENI - <strong>MEMORY</strong> - Jouer</h1>
-    <nav class ="menunavigation" >
-        <div class="menu">
-          <ul>
-            <li class="menuf"><a href="index.html" >Accueil</a></li>
-            <li class="menuf"><a href="Formulaire.html" >S'inscrire</a></li>
-            <li class="menuf"><a href="Connexion.html" >Se connecter</a></li>
-            <li class="menuf"><a href="Profil.html" >Profil</a></li>
-            <li class="menuf"><a href="Jouer.html" >Jouer</a></li>
-          </ul>
-        </div>
-    </nav>
+  <h1>ENI - <strong>MEMORY</strong> - Jouer</h1>
+      <nav class ="menunavigation" >
+          <div class="menu">
+            <ul>
+              <li class="menuf"><a href="index.html" >Accueil</a></li>
+              <li class="menuf"><a href="Formulaire.html" >S'inscrire</a></li>
+              <li class="menuf"><a href="Connexion.html" >Se connecter</a></li>
+              <li class="menuf"><a href="Profil.html" >Profil</a></li>
+              <li class="menuf"><a href="Jouer.html" >Jouer</a></li>
+            </ul>
+          </div>
+      </nav>
 </header>
 
 <main class="jeumain">
-    <div>
+    
+    <div class="derniermeilleurscores" >
+      <h2 ><strong>Derniers meilleurs scores : </strong></h2>
+    </div>
 
-    <h2>Derniers meilleurs scores : </h2>
-    <table>
+    <div class="tableaumeilleursscores">
+      <table>
       <thead>
         <tr>
           <th>Pseudo</th>
@@ -52,39 +55,44 @@
           <td>-----</td>
         </tr>     
       </tbody>
-    </table>
+      </table>
+
+    </div>
+    
 
     <div class="consignesJeu">
-    <p>Tentez de gagner avec le moins d'essais possible</p>
-    <p>Appuyez sur la <strong>barre d'espace</strong>pour relancer le jeu</p>
-    <p>Nombre de coup : 0</p>
+      <p>Tentez de gagner avec le moins d'essais possible</p>
+      <p>Appuyez sur la <strong>barre d'espace</strong>pour relancer le jeu</p>
+      <p>Nombre de coup : 0</p>
     </div>
     <br>
     <br>
     <br>
-    <table class="plateau">
-        <tr>
-            <td id="0"><img id="image_0" src="ressources/question.svg" alt="point d'interrogation" width="150" height="150"></td>
-            <td id="1"><img id="image_1" src="ressources/question.svg" alt="point d'interrogation" width="150" height="150"></td>
-            <td id="2"><img id="image_2" src="ressources/question.svg" alt="point d'interrogation" width="150" height="150"></td>
-            <td id="3"><img id="image_3" src="ressources/question.svg" alt="point d'interrogation" width="150" height="150"></td>
-        </tr>
-        <tr>
-            <td id="4"><img id="image_4" src="ressources/question.svg" alt="point d'interrogation" width="150" height="150"></td>
-            <td id="5"><img id="image_5" src="ressources/question.svg" alt="point d'interrogation" width="150" height="150"></td>
-            <td id="6"><img id="image_6" src="ressources/question.svg" alt="point d'interrogation" width="150" height="150"></td>
-            <td id="7"><img id="image_7" src="ressources/question.svg" alt="point d'interrogation" width="150" height="150"></td>
-        </tr>
-        <tr>
-            <td id="8"><img id="image_8" src="ressources/question.svg" alt="point d'interrogation" width="150" height="150"></td>
-            <td id="9"><img id="image_9" src="ressources/question.svg" alt="point d'interrogation" width="150" height="150"></td>
-            <td id="10"><img id="image_10" src="ressources/question.svg" alt="point d'interrogation" width="150" height="150"></td>
-            <td id="11"><img id="image_11" src="ressources/question.svg" alt="point d'interrogation" width="150" height="150"></td>
-        </tr>
-    </table>
-
-
+    <div class="plateauparent">
+      <table class="plateau">
+          <tr>
+              <td id="0"><img id="image_0" src="ressources/question.svg" alt="point d'interrogation" width="150" height="150"></td>
+              <td id="1"><img id="image_1" src="ressources/question.svg" alt="point d'interrogation" width="150" height="150"></td>
+              <td id="2"><img id="image_2" src="ressources/question.svg" alt="point d'interrogation" width="150" height="150"></td>
+              <td id="3"><img id="image_3" src="ressources/question.svg" alt="point d'interrogation" width="150" height="150"></td>
+          </tr>
+          <tr>
+              <td id="4"><img id="image_4" src="ressources/question.svg" alt="point d'interrogation" width="150" height="150"></td>
+              <td id="5"><img id="image_5" src="ressources/question.svg" alt="point d'interrogation" width="150" height="150"></td>
+              <td id="6"><img id="image_6" src="ressources/question.svg" alt="point d'interrogation" width="150" height="150"></td>
+              <td id="7"><img id="image_7" src="ressources/question.svg" alt="point d'interrogation" width="150" height="150"></td>
+          </tr>
+          <tr>
+              <td id="8"><img id="image_8" src="ressources/question.svg" alt="point d'interrogation" width="150" height="150"></td>
+              <td id="9"><img id="image_9" src="ressources/question.svg" alt="point d'interrogation" width="150" height="150"></td>
+              <td id="10"><img id="image_10" src="ressources/question.svg" alt="point d'interrogation" width="150" height="150"></td>
+              <td id="11"><img id="image_11" src="ressources/question.svg" alt="point d'interrogation" width="150" height="150"></td>
+          </tr>
+      </table>
     </div>
+
+
+  
   </main>
 </body>
 </html>
