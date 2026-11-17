@@ -1,4 +1,88 @@
-td {
+/*CSS GENERALE (commun à toutes les pages ___________________________________________________________________________________________________________*/
+
+
+
+/*CSS du background de toutes les pages*/
+body {
+    background-color: dodgerblue;
+}
+
+/*CSS de tous les h1*/
+h1 {
+    display: flex;
+    justify-content: center;
+    color: white ; 
+    text-shadow: 1px 1px 2px black;
+    font-size: 7em ;
+}
+
+/*CSS du menu de toute les pages*/
+.menunavigation ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    background-color: black;
+    margin-left: 2vw ;
+    padding: 15px;
+    width: 25em;
+}
+
+/*CSS des éléments du menu de toute les pages*/
+.menunavigation li a{
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+/*CSS des éléments du menu de toute les pages*/
+.menunavigation li a:hover{
+    color: crimson;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+/*CSS page d'accueil------------------------------------------------------------------------------------------------------------------*/
+
+/*CSS de la page d'acceuil partie main */
+.accueilmain {
+    background-color: black;
+    color: white;
+    margin: 10vw;
+    border-radius: 20px;
+    padding: 1%;
+}
+
+/*CSS de la page d'acceuil partie main */
+.imageaccueil {
+    text-align: center;
+}
+
+/*CSS de la page "jouer" partie main */
+.jeumain {
+    background-color: black;
+    color: white;
+    margin: 10vw;
+    border-radius: 20px;
+    padding: 1%;
+}
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+/*CSS page de jeu------------------------------------------------------------------------------------------------------------------*/
+
+/*CSS du plateau de jeu*/
+.plateau td {
     height: 15vh;
     width: 15vh;
     background-color: rgba(200, 200, 200, 0.2);
@@ -8,8 +92,16 @@ td {
     cursor: pointer;
 }
 
-td:hover {
+
+/*CSS du plateau de jeu*/
+.plateau td:hover {
     border: 1px black solid;
 }
+
+.consignesJeu {
+    text-align: center;
+}
+
+
 
 
