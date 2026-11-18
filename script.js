@@ -9,7 +9,38 @@ var tableauCorrespondanceMemoryImage = [
   {nom:"dinosauresAvecNom",nomAffiche:"Dinosaures avec nom",img:"./ressources/dinosauresAvecNom/memory_details_dinosaures_avec_nom.png",chemin:"./ressources/dinosauresAvecNom/",extension:"jpg",nombreCartes:10},
   {nom:"alphabetScrabble",nomAffiche:"Lettre Scrablle",img:"./ressources/alphabet-scrabble/memory_detail_scrabble.png",chemin:"./ressources/alphabet-scrabble/",extension:"png",nombreCartes:26}
 ];
+*/
+
+
+/*REMPLIR LA GRILLE ALEATOIREMENT */
+/*Remplir la grille aléatoirement_ RECUPERER LS PHOTOS DE LEGUMES*/
+
+const photoslegumes = ["./ressources/memory-legume/1.svg","./ressources/memory-legume/2.svg",
+"./ressources/memory-legume/3.svg","./ressources/memory-legume/4.svg","./ressources/memory-legume/5.svg",
+"./ressources/memory-legume/6.svg"
+]
+
+/*Remplir la grille aléatoirement_DOUBLER LES PHOTOS*/
+const cartesdumemory = [...photoslegumes,...photoslegumes]
 
 
 
- */
+/*Remplir la grille aléatoirement_MELANGER LES PHOTOS */
+for (let i = 0 ; i < cartesdumemory.length ; i++){
+
+  const aleat = Math.floor(Math.random()*12);
+ [cartesdumemory[i],cartesdumemory[aleat]] = [cartesdumemory[aleat],cartesdumemory[i]]
+}
+
+/*Remplir la grille aléatoirement_AFFICHER LE PLATEAU */
+const caseduplateau = document.querySelectorAll(".plateau")
+  
+const casesSelect = document.getElementById("0");
+const imageSelect = document.getElementById("image_0");
+
+casesSelect.addEventListener("click", () => {
+  imageSelect.src = cartesdumemory[1]
+})
+
+
+
