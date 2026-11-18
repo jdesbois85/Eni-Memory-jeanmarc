@@ -14,21 +14,21 @@ var tableauCorrespondanceMemoryImage = [
   /*REMPLIR LA GRILLE ALEATOIREMENT */
   /*Remplir la grille aléatoirement_ RECUPERER LES PHOTOS DE LEGUMES*/
 
-  const photoslegumes = ["./ressources/memory-legume/1.svg","./ressources/memory-legume/2.svg",
+  const photosLegumes = ["./ressources/memory-legume/1.svg","./ressources/memory-legume/2.svg",
   "./ressources/memory-legume/3.svg","./ressources/memory-legume/4.svg","./ressources/memory-legume/5.svg",
   "./ressources/memory-legume/6.svg"
   ]
 
   /*Remplir la grille aléatoirement_DOUBLER LES PHOTOS*/
-  const cartesdumemory = [...photoslegumes,...photoslegumes]
+  const cartesDuMemory = [...photosLegumes,...photosLegumes]
 
 
 
   /*Remplir la grille aléatoirement_MELANGER LES PHOTOS */
-  for (let i = 0 ; i < cartesdumemory.length ; i++){
+  for (let i = 0 ; i < cartesDuMemory.length ; i++){
 
     const aleat = Math.floor(Math.random()*12);
-  [cartesdumemory[i],cartesdumemory[aleat]] = [cartesdumemory[aleat],cartesdumemory[i]]
+  [cartesDuMemory[i],cartesDuMemory[aleat]] = [cartesDuMemory[aleat],cartesDuMemory[i]]
   }
 
   /*Remplir la grille aléatoirement_AFFICHER LE PLATEAU */
@@ -61,39 +61,48 @@ var tableauCorrespondanceMemoryImage = [
 
 
   casesSelect01.addEventListener("click", () => {
-    imageSelect01.src = cartesdumemory[0]
+    imageSelect01.src = cartesDuMemory[0]
+  
   })
   casesSelect02.addEventListener("click", () => {
-    imageSelect02.src = cartesdumemory[1]
+    imageSelect02.src = cartesDuMemory[1]
   })
   casesSelect03.addEventListener("click", () => {
-    imageSelect03.src = cartesdumemory[2]
+    imageSelect03.src = cartesDuMemory[2]
   })
   casesSelect04.addEventListener("click", () => {
-    imageSelect04.src = cartesdumemory[3]
+    imageSelect04.src = cartesDuMemory[3]
   })
   casesSelect05.addEventListener("click", () => {
-    imageSelect05.src = cartesdumemory[4]
+    imageSelect05.src = cartesDuMemory[4]
   })
   casesSelect06.addEventListener("click", () => {
-    imageSelect06.src = cartesdumemory[5]
+    imageSelect06.src = cartesDuMemory[5]
   })
   casesSelect07.addEventListener("click", () => {
-    imageSelect07.src = cartesdumemory[6]
+    imageSelect07.src = cartesDuMemory[6]
   })
   casesSelect08.addEventListener("click", () => {
-    imageSelect08.src = cartesdumemory[7]
+    imageSelect08.src = cartesDuMemory[7]
   })
   casesSelect09.addEventListener("click", () => {
-    imageSelect09.src = cartesdumemory[8]
+    imageSelect09.src = cartesDuMemory[8]
   })
   casesSelect10.addEventListener("click", () => {
-    imageSelect10.src = cartesdumemory[9]
+    imageSelect10.src = cartesDuMemory[9]
   })
   casesSelect11.addEventListener("click", () => {
-    imageSelect11.src = cartesdumemory[10]
+    imageSelect11.src = cartesDuMemory[10]
   })
   casesSelect12.addEventListener("click", () => {
-    imageSelect12.src = cartesdumemory[11]
+    imageSelect12.src = cartesDuMemory[11]
   })
 
+ /* let DataImage1 = event.currentTarget.querySelector("img").src 
+  let DataImage2 = event.currentTarget.querySelector("img").src
+
+  if (DataImage1 === DataImage2){
+
+
+
+  }*/
